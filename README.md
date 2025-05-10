@@ -41,8 +41,9 @@ leaflet-challenge/
    ```bash
    git clone https://github.com/yourusername/leaflet-challenge.git
    ```
-   ----
 2. Navigate into the project folder:
+   ```bash
   cd leaflet-challenge/Leaflet-Part-1
+   ```
 3. Open index.html in your web browser.
 ✅ Note: If you're using Mapbox tile layers, make sure to add your own Mapbox access token in logic.js.
