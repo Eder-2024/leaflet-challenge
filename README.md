@@ -23,7 +23,7 @@ This project visualizes global earthquake activity using real-time data from the
 - Mapbox & CartoDB tile layers
 
 ## 📁 Project Structure
-
+```
 leaflet-challenge/
 ├── Leaflet-Part-1/
 │   ├── index.html
@@ -32,7 +32,7 @@ leaflet-challenge/
 │   │   │   └── style.css
 │   │   └── js/
 │   │       └── logic.js
-
+```
 
 
 ## 🚀 How to Run
@@ -40,6 +40,8 @@ leaflet-challenge/
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/leaflet-challenge.git
+   ```
+   ----
 2. Navigate into the project folder:
   cd leaflet-challenge/Leaflet-Part-1
 3. Open index.html in your web browser.
