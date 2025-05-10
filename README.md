@@ -25,13 +25,14 @@ This project visualizes global earthquake activity using real-time data from the
 ## 📁 Project Structure
 ```
 leaflet-challenge/
-├── Leaflet-Part-1/
-│   ├── index.html
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   └── js/
-│   │       └── logic.js
+
+├── index.html
+├── Images/
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── logic.js
 ```
 
 
@@ -43,7 +44,7 @@ leaflet-challenge/
    ```
 2. Navigate into the project folder:
    ```bash
-  cd leaflet-challenge/Leaflet-Part-1
+    cd leaflet-challenge/Leaflet-Part-1
    ```
 3. Open index.html in your web browser.
 ✅ Note: If you're using Mapbox tile layers, make sure to add your own Mapbox access token in logic.js.
