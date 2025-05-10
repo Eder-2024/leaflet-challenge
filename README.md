@@ -48,3 +48,7 @@ leaflet-challenge/
 3. Open index.html in your web browser.
 ---
 ✅ Note: If you're using Mapbox tile layers, make sure to add your own Mapbox access token in logic.js.
+---
+## References 📌
+
+Dataset created by the [United States Geological Survey](https://www.usgs.gov/)
