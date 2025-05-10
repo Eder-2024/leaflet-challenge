@@ -47,4 +47,5 @@ leaflet-challenge/
     cd leaflet-challenge
    ```
 3. Open index.html in your web browser.
+---
 ✅ Note: If you're using Mapbox tile layers, make sure to add your own Mapbox access token in logic.js.
