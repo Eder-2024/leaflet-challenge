@@ -1,4 +1,3 @@
-# leaflet-challenge
 # 🌍 Leaflet Earthquake Visualization
 
 This project visualizes global earthquake activity using real-time data from the [USGS Earthquake GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php). It uses **Leaflet.js** and **D3.js** to display interactive maps and markers that reflect the **magnitude** and **depth** of earthquakes, with additional tectonic plate boundary data overlaid for deeper insight.
