@@ -1,6 +1,7 @@
 // Create the 'basemap' tile layer that will be the default background of our map.
 let basemap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: "© OpenStreetMap contributors"
+  attribution: "© OpenStreetMap contributors",
+  detectRetina: true
 });
 
 // OPTIONAL: Step 2
@@ -79,19 +80,17 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
   // Adding earthquake markers to the map.
   L.geoJson(data, {
-    // Convert each earthquake point into a circle marker.
-    pointToLayer: function (feature, latlng) {
-      return L.circleMarker(latlng);
-    },
-    // Apply styling to each marker.
-    style: styleInfo,
-    // Add popups displaying magnitude, location, and depth for each earthquake.
-    onEachFeature: function (feature, layer) {
-      layer.bindPopup(
-        `Magnitude: ${feature.properties.mag}<br>Location: ${feature.properties.place}<br>Depth: ${feature.geometry.coordinates[2]} km`
-      );
-    }
-  }).addTo(earthquakes);
+  pointToLayer: function (feature, latlng) {
+    // Ensuring correct coordinate order (latitude, longitude)
+    return L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]]);
+  },
+  style: styleInfo,
+  onEachFeature: function (feature, layer) {
+    layer.bindPopup(
+      `Magnitude: ${feature.properties.mag}<br>Location: ${feature.properties.place}<br>Depth: ${feature.geometry.coordinates[2]} km`
+    );
+  }
+}).addTo(earthquakes);
 
   // Create a legend control object for displaying depth categories.
   let legend = L.control({
